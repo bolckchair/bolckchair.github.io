@@ -1,0 +1,146 @@
+{
+  "settings": {
+    "name": "bolckchair",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.18",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/blockchair-favicon.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://bolckchair.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://bolckchair.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.18"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Blockchair | Bitcoin - Blockchain Explorer",
+        "meta_descr": "Blockchair is the most private blockchain search engine. Unlike most blockchain explorers and cryptocurrency organizations, we do not collect personal data, nor do we share it with third-party …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://blockchair.com/\"><img src=\"@PROJECT_PATH@/assets/images/blockchair.jpeg\" alt=\"Blockchair\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "uAv62G3TMB",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n            <b><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> | <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchain Explorer</a></b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Introduction to <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a></b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> is an advanced blockchain explorer that allows users to search, analyze, and visualize data from multiple blockchain networks. It provides a platform where users can track transactions, blocks, addresses, and other relevant information from supported blockchains. Initially launched as a Bitcoin block explorer, Blockchair has since expanded to support a wide range of blockchain networks, including Ethereum, Bitcoin Cash, Litecoin, and several others.<br><br>Unlike some other blockchain explorers, Blockchair is known for its detailed analytics and advanced search capabilities, making it a popular choice among cryptocurrency enthusiasts, developers, and businesses looking to analyze blockchain data in depth.<br><br>A Brief History of <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a><br><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> was created by a team of developers and blockchain enthusiasts led by Nikita Zhuk, the project's founder. The initial aim was to create a Bitcoin-focused block explorer that was more comprehensive than existing tools at the time. Since its inception in 2017, Blockchair has rapidly expanded its scope, integrating multiple blockchains into its platform.<br><br>One of the key differentiators for <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> was its focus on privacy, offering users a blockchain explorer that respects data protection. Over the years, Blockchair has continuously updated its interface and improved its features, earning a reputation for being one of the most advanced and user-centric blockchain explorers available today.<br><br>Key Features of <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a><br>Some of the standout features of <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> include:<br><br>Multi-Blockchain Support: <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> supports a variety of blockchain networks, enabling users to explore data across different cryptocurrencies.<br>Advanced Search: <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> offers a robust search engine that allows users to filter blockchain data by transaction ID, address, block height, and more.<br>Transaction History: Users can view detailed information about individual transactions, including fees, inputs/outputs, and confirmations.<br>Data Analytics: <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> provides analytics tools that allow users to track network activity, hash rates, and transaction volumes over time.<br>Privacy-Focused: <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> emphasizes privacy and does not store any personally identifiable information (PII) on its platform.<br>API Access: <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> offers an API for developers to integrate blockchain data into their applications.<br>2. Supported Blockchains<br><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> began as a Bitcoin explorer, but it has expanded its support to a wide range of cryptocurrencies, making it a truly multi-chain explorer. Let's take a closer look at the main blockchains Blockchair supports.<br><br>Bitcoin (BTC)<br>Bitcoin is the flagship cryptocurrency, and <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> offers one of the most detailed Bitcoin blockchain explorers available. Users can explore Bitcoin transactions, blocks, addresses, and more. Key features include the ability to view transaction history, check Bitcoin block rewards, and track the movement of Bitcoin across the network.<br><br>Ethereum (ETH)<br>Ethereum is another major blockchain supported by <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a>. As the leading smart contract platform, Ethereum’s block explorer allows users to track Ethereum transactions, interact with smart contracts, and explore ERC-20 token data. <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> makes it easy to search for transactions, view gas prices, and analyze network activity on Ethereum.<br><br>Bitcoin Cash (BCH)<br>Bitcoin Cash, a hard fork of Bitcoin, also benefits from Blockchair's powerful features. Users can track BCH transactions, view block data, and check wallet balances. <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> provides insights into BCH's on-chain scaling, which is a key differentiator for the network.<br><br>Litecoin (LTC)<br>Litecoin is often referred to as the silver to Bitcoin’s gold. Blockchair’s Litecoin explorer allows users to view detailed block data, transactions, and historical data for Litecoin’s network. It also provides insights into transaction fees, hash rates, and other network statistics.<br><br>Other Supported Blockchains<br>Beyond Bitcoin, Ethereum, Bitcoin Cash, and Litecoin, <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> supports other major blockchains such as DogeCoin (DOGE), Dash, Zcash, and more. It continually adds support for additional blockchains, ensuring that users can explore data from a wide variety of networks.<br><br>3. User Interface and Functionality<br>Overview of the User Interface<br>The user interface (UI) of Blockchair is sleek, minimalistic, and highly functional. The design is easy to navigate, with sections dedicated to blocks, transactions, addresses, and more. Upon entering the site, users are greeted with a search bar where they can quickly enter transaction IDs, block heights, or addresses.<br><br><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> also offers a dark mode, which is appreciated by many users who spend extended periods of time analyzing blockchain data. The UI is responsive, making it accessible on desktop and mobile devices alike.<br><br>Exploring Blocks, Transactions, and Addresses<br>Blockchair makes it easy for users to explore different aspects of the blockchain:<br><br>Blocks: Users can search for and view individual blocks. Each block is displayed with information such as its block height, timestamp, hash, and the number of transactions it contains.<br>Transactions: Transaction details are displayed with information about the sender, receiver, transaction fees, and confirmation status. Blockchair provides in-depth insights into how the transaction is structured, making it easier to understand blockchain mechanics.<br>Addresses: <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> allows users to search for and view the activity of specific blockchain addresses. The interface shows the balance of the address and a history of its transactions.<br>Advanced Search and Filtering Features<br>Blockchair’s search function is one of its most powerful features. Users can filter results based on:<br><br>Transaction Type: Users can search for specific types of transactions, such as contract interactions on Ethereum or coinbase transactions on Bitcoin.<br>Timeframes: You can filter blocks and transactions by specific time periods to analyze trends and behaviors over time.<br>Transaction Size and Fees: Blockchair allows filtering based on the size of the transaction, as well as the fee paid.<br>This advanced search functionality makes Blockchair a valuable tool for power users, researchers, and analysts.<br><br>Analytics and Charts<br><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> provides powerful analytics tools for visualizing blockchain data. The platform includes charts that display:<br><br>Transaction Volume: Track the number of transactions processed on the network over time.<br>Hash Rate: View the computational power used to mine blocks on networks like Bitcoin and Ethereum.<br>Block Size: Monitor the average size of blocks over time to track network congestion.<br>These charts and analytics can be valuable for those looking to understand the performance and health of a given blockchain.<br><br>4. Privacy and Security Features<br>Privacy Concerns in Blockchain Explorers<br>Blockchain technology is often associated with privacy due to the pseudonymous nature of transactions. However, many blockchain explorers gather and store metadata about user interactions, which can compromise privacy. For example, some explorers track IP addresses or embed tracking scripts that violate user privacy.<br><br>Blockchair’s Privacy-Focused Features<br>Blockchair takes user privacy seriously and aims to minimize data collection. The platform does not store any personally identifiable information (PII) unless users explicitly provide it. Furthermore, Blockchair does not track user activity across sessions, making it a safer option for privacy-conscious users.<br><br>Security Measures and User Data<br>Blockchair employs industry-standard security practices to safeguard user data. This includes encryption for data in transit and secure server infrastructure. Since Blockchair does not collect or store sensitive user data, the risk of data breaches is minimized.<br><br>5. Technical Architecture of Blockchair<br>How Blockchair Works<br>Blockchair works by connecting directly to full nodes of supported blockchains. It indexes blockchain data in real-time and provides it through an easy-to-use interface. The platform fetches data, processes it, and presents it in a way that is accessible to both casual users and developers.<br><br>Indexing and Data Retrieval<br>Blockchair's indexing system is highly optimized, allowing it to efficiently retrieve data from large blockchains. This is essential for supporting multiple blockchains simultaneously without sacrificing speed or accuracy.<br><br>APIs and Developer Tools<br>Blockchair offers a public API that allows developers to access blockchain data programmatically. The API supports a wide range of use cases, from retrieving transaction details to querying blockchain statistics. Blockchair's API is well-documented and easy to integrate, making it a valuable resource for developers building blockchain-based applications.<br><br>6. Blockchair vs. Other Blockchain Explorers<br>Comparing Blockchair with Blockchain.com Explorer<br>Blockchain.com Explorer is another popular tool for exploring Bitcoin and other blockchains. While it offers basic search functionality and transaction tracking, Blockchair provides more detailed analytics and better privacy controls. Blockchair’s advanced search features and multi-blockchain support make it a more powerful tool for researchers and analysts.<br><br>Blockchair vs. Etherscan<br>Etherscan is the go-to blockchain explorer for Ethereum, but it lacks the multi-chain support that Blockchair offers. Blockchair provides a more holistic view of the blockchain ecosystem by supporting a wide range of blockchains. While Etherscan is unparalleled for Ethereum-specific data, Blockchair’s broader focus makes it a more versatile tool overall.<br><br>Features that Set Blockchair Apart<br>Blockchair’s emphasis on privacy, its advanced search functionality, and its multi-blockchain support set it apart from other blockchain explorers. Additionally, its data analytics tools, including visualizations and charts, provide users with deeper insights into blockchain network activity.<br><br>7. Use Cases and Applications of <a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a><br>For Casual Users and Investors<br>Casual users and investors can use Blockchair to track their cryptocurrency holdings, monitor transaction history, and verify transactions. The platform’s intuitive interface makes it easy for users to check the status of their investments.<br><br>For Developers<br>Developers can leverage Blockchair’s API to integrate blockchain data into their applications. Whether it's tracking transactions, monitoring network health, or analyzing trends, Blockchair provides the tools developers need to build advanced blockchain applications.<br><br>For Researchers and Data Analysts<br>Researchers and data analysts use Blockchair’s robust data analytics tools to gain insights into blockchain network behavior. The platform’s ability to visualize data trends makes it an invaluable resource for those studying blockchain ecosystems.<br><br>8. Blockchair’s Contribution to Blockchain Transparency<br>Transparency in Blockchain Ecosystems<br>Blockchain technology promotes transparency by enabling anyone to verify transactions and other network activities. Blockchair enhances this transparency by making blockchain data easily accessible and understandable.<br><br>How Blockchair Enhances Trust in the Blockchain<br>By providing easy access to reliable and detailed blockchain data, Blockchair helps users verify claims and assertions about blockchain networks. This transparency fosters trust and confidence in the ecosystem, which is essential for the growth and adoption of blockchain technology.<br><br>9. Future of Blockchair and Blockchain Explorers<br>Upcoming Features and Enhancements<br>Blockchair is continuously improving its features and adding support for new blockchains. Future updates may include even more advanced analytics tools, better privacy controls, and integrations with emerging blockchain technologies.<br><br>The Growing Role of Blockchain Explorers in DeFi and Web3<br>As decentralized finance (DeFi) and Web3 technologies continue to grow, the role of blockchain explorers like Blockchair will become increasingly important. These tools will be essential for monitoring DeFi transactions, verifying smart contract executions, and ensuring the integrity of decentralized applications (dApps).<br><br>Predictions for the Blockchain Explorer Market<br>The market for blockchain explorers is expected to grow as the adoption of blockchain technology expands. Blockchair, with its multi-chain support and privacy-focused features, is well-positioned to lead the charge in the coming years.<br><br>10. Conclusion<br><a href=\"https://blockchair.com/\" class=\"text-primary\">Blockchair</a> is an essential tool for anyone working with blockchain technology. Whether you are a casual user, a developer, or a data analyst, Blockchair provides the tools you need to explore blockchain data, analyze network activity, and ensure transparency. With its focus on privacy, advanced search functionality, and support for multiple blockchains, Blockchair stands out as one of the most powerful and user-friendly blockchain explorers available.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "uAv63wTg2I",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
